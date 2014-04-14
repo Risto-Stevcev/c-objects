@@ -4,7 +4,7 @@
 #include "dog.h"
 
 
-char *
+const char *
 dog_says ()
 {
     return "woof";

@@ -9,10 +9,10 @@ dog_data_t
 typedef struct
 dog_functions_t
 {
-    char * (*says) ();
+    const char *(*says) ();
     void (*guards) ();
 } DogFunctions; 
 
-char *dog_says ();
+const char *dog_says ();
 void guards ();
 #endif

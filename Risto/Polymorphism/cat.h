@@ -9,10 +9,10 @@ cat_data_t
 typedef struct
 cat_functions_t
 {
-    char * (*says) ();
+    const char *(*says) ();
     void (*eats_mice) ();
 } CatFunctions;
 
-char *cat_says ();
+const char *cat_says ();
 void eats_mice ();
 #endif

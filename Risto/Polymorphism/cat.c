@@ -4,7 +4,7 @@
 #include "cat.h"
 
 
-char *
+const char *
 cat_says ()
 {
     return "meow";

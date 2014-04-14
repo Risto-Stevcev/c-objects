@@ -111,8 +111,9 @@ We can then elegantly deal with the ``malloc``'d ``struct`` in the ``del`` metho
     #import "dog.h"
     ...
     void
-    del (Animal *self)
+    del (void *animal)
     {
+        Animal *self = (Animal *) animal;
         if (self->type == DOG)
             free(((DogData *) self->data)->owner_info);
         free(self->data);

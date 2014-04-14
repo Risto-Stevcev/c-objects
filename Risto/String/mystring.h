@@ -5,12 +5,12 @@ typedef struct mystring_t
     char *name;
     char *bye;
     int length;
-    void (*say_hi) ();
-    void (*say_bye) ();
-    void (*del) ();
+    void (*say_hi) (void *);
+    void (*say_bye) (void *);
+    void (*del) (void *);
 } String;
 
 String *initString(char *);
-void say_hi(String *);
-void say_bye(String *);
+void say_hi(void *);
+void say_bye(void *);
 #endif

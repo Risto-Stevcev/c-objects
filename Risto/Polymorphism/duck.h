@@ -9,10 +9,10 @@ duck_data_t
 typedef struct
 duck_functions_t
 {
-    char * (*says) ();
+    const char *(*says) ();
     void (*are_smart) ();
 } DuckFunctions; 
 
-char *duck_says ();
+const char *duck_says ();
 void are_smart ();
 #endif

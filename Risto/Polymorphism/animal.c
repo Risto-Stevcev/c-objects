@@ -4,13 +4,14 @@
 
 
 void
-del (Animal *self)
+del (void *animal)
 {
+    Animal *self = (Animal *) animal;
     free(self->data);
     free(self);
 }
 
-char *
+const char *
 say_type (Animal *animal)
 {
     if (animal->type == DOG)

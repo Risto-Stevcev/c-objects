@@ -4,7 +4,7 @@
 #include "duck.h"
 
 
-char *
+const char *
 duck_says ()
 {
     return "quack";

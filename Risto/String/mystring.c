@@ -5,20 +5,23 @@
 
 
 void
-say_hi(String *self)
+say_hi(void *string)
 {
+    String *self = (String *) string;
     printf("Hello, %s!\n", self->name); 
 }
 
 void
-say_bye(String *self)
+say_bye(void *string)
 {
+    String *self = (String *) string;
     printf("%s\n", self->bye);
 }
 
 void
-del(String *self)
+del(void *string)
 {
+    String *self = (String *) string;
     free(self->bye);
     free(self);
 }
